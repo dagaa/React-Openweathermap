@@ -9,7 +9,7 @@ var Weather = React.createClass({
     };
   },
   componentDidMount: function() {
-    var APPID = '6abad23c4f6f7e68dcbc7d4c48683108';
+    var APPID = 'INSERT-YOUR-API-KEY'; //from openweathermap
     var REQUEST_URL = "http://api.openweathermap.org/data/2.5/weather?units=metric&lang=no&";
     var formattedURL = REQUEST_URL + "APPID="+APPID+ "&lat=" + this.props.lat + "&lon=" + this.props.lon;
     console.log(formattedURL);
